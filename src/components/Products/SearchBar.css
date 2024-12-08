@@ -1,0 +1,24 @@
+input{
+    width: 972px!important;
+}
+@media (max-width: 1024px) {
+    input{
+        width: 772px!important;
+    }
+    }
+    @media (max-width: 768px) {
+        input{
+            width: 572px!important;
+        }
+    }
+    @media (max-width: 640px) {
+        input{
+            width: 372px!important;
+        }
+    }
+    @media (max-width: 640px) {
+        input{
+            width: 372px!important;
+        }
+    }
+    

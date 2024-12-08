@@ -1,0 +1,14 @@
+
+
+
+    .photos{
+        
+        max-width: 279px;
+        
+    }
+
+@media(max-width: 768px) {
+    .photos{
+        max-width: 1000px!important;
+    }
+}
