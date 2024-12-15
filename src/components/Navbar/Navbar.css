@@ -40,3 +40,10 @@
         margin-top: 40px;
     }
 }
+@media (min-width: 818px) and (max-width: 1023px) {
+    .nav-link {
+        padding: 0px 12px;
+    }
+}
+
+

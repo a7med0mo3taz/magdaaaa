@@ -17,3 +17,7 @@
         opacity: 100%;
     }
 }
+
+.loadingBg{
+    background-color: #4fa64b;
+}

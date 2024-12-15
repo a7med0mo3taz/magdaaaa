@@ -1,9 +1,7 @@
 import React, { useEffect } from 'react'
-import  "./Home.css"
-import Carousel from '../Carousel/Carousel'
-import CategoriesCarousel from '../CategoriesCarousel/CategoriesCarousel'
+import Carousel from './Carousel/Carousel'
+import CategoriesCarousel from './CategoriesCarousel/CategoriesCarousel'
 import Products from '../Products/Products'
-import { CartProvider } from '../../context/cartContext/CartContext';
 
 export default function Home() {
     const usePageTitle = (title) => {
@@ -14,12 +12,11 @@ export default function Home() {
     usePageTitle("Home")
     return (
         <>
-        <div className="flex flex-col items-center justify-center">
-            {/* <Carousel/> */}
-            <CartProvider>
-            <Products/>
-            </CartProvider>
-        </div>
+            <div className="flex my-24 py-5  flex-col items-center justify-center">
+                <Carousel/>
+                <CategoriesCarousel/>
+                <Products />
+            </div>
         </>
     )
 }

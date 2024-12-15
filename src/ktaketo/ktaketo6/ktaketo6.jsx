@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from 'react';
 import ktakito6 from '../../assets/dark.jpg';
-import { CartContext } from '../../context/cartContext/CartContext';
+import { CartContext } from '../../Context/CartContext';
 
 export default function Ktakito6() {
     const usePageTitle = (title) => {
@@ -13,8 +13,8 @@ export default function Ktakito6() {
     const { addToCart } = useContext(CartContext)
     return (
         <>
-            <div className="flex justify-center items-start mt-20">
-                <div className="grid grid-cols-10 gap-5 w-full max-w-6xl">
+            <div className="flex justify-center items-start mt-20 px-10">
+                <div className="grid grid-cols-1 sm:grid-cols-10 md:grid-cols-10 gap-5 w-full max-w-6xl">
                     {/* صورة المنتج */}
                     <div className="col-span-4">
                         <img
@@ -23,15 +23,14 @@ export default function Ktakito6() {
                             alt="Product Cover"
                         />
                     </div>
-
                     {/* تفاصيل المنتج */}
-                    <div className="col-span-6 flex flex-col justify-center">
-                        <h2 className="text-4xl text-end mb-2">بسكويت كتاكيتو</h2>
+                    <div className="col-span-6 flex flex-col justify-center mb-10">
+                        <h2 className="text-4xl text-end  mb-2">  كتاكيتو دارك  </h2>
                         <p className="mb-4 text-end">
-                            بسكويت ويفر المقرمش محشو بالشوكولاتة الطبيعية. مثالي لتلبية الرغبة الشديدة في تناول الطعام في منتصف اليوم. يمكن أيضًا غمس البسكويت المقرمش في الشاي أو الحليب
-                        </p>
+                            بسكويت كتاكيتو شمعدان المصري ،ويفر مقرمش محشو بالشوكولاته الطبيعية ، يمد ب كمية هائلة من الطاقة الشديدة ، يمكن أيضاً غمس البسكويت ف الحليب. <br />
+                            #شاركنا أنت مصري                        </p>
                         <div className="flex justify-between items-center mb-4">
-                            <span>20 EGY</span>
+                            <span>15 EGY</span>
                             <div>
                                 <i className="fa-solid fa-star fa-lg" style={{ color: '#FFD43B' }} />
                                 <span className="bg-blue-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded ms-3">
@@ -41,16 +40,15 @@ export default function Ktakito6() {
                         </div>
                         <div className="flex items-center justify-between gap-5">
                             <button
-                                onClick={()=>addToCart()}
+                                onClick={() => addToCart()}
                                 className="text-white w-full bg-green-500 hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
                             >
                                 Add to cart +
                             </button>
                             <button className=''>
-                    <i className="fa-solid fa-heart fa-2xl" style={{color: '#f2071f'}} />
-
-                    </button>                     
-                    </div>
+                                <i className="fa-solid fa-heart fa-2xl" style={{ color: '#f2071f' }} />
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
