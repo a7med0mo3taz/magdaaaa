@@ -1,5 +1,4 @@
 import React, { useContext, useEffect, useRef, useState } from 'react';
-import "./ProductDetails.css"
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import Loading from '../Loading/Loading';
@@ -117,7 +116,7 @@ export default function ProductDetails() {
                             <h2 className="text-4xl text-start mb-2">{productDetails.title}</h2>
                             <p className="mb-4 text-start">{productDetails.description}</p>
                             <div className="flex justify-between items-center mb-4">
-                                <span className='price'>{productDetails.price} EGY</span>
+                                <span>{productDetails.price} EGY</span>
                                 <div>
                                     <i className="fa-solid fa-star fa-lg" style={{ color: '#FFD43B' }} />
                                     <span className="bg-blue-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded ms-3">
